@@ -459,7 +459,6 @@ function brunch()
 {
     breakfast $*
     if [ $? -eq 0 ]; then
-        export CM_FAST_BUILD=1
         mka bacon
     else
         echo "No such item in brunch menu. Try 'breakfast'"
